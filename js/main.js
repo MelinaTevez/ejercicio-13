@@ -1,58 +1,17 @@
 
-/*Consigna 2 */
+ /*---------------Consigna 2 ------------*/
+
  document.addEventListener('DOMContentLoaded', () => {
 
     console.log('Contenido del DOM cargado');
 
-    /*Consigna 3 */
+    /*---------------Consigna 3 ------------*/
 
     let textareaOrigen = document.querySelector('textarea'); 
 
     textareaOrigen.value = '<p>Este contenido <strong>está listo</strong><br>para ser editado y pasarlo abajo.</p>'
     
-    /*Consigna 4 */
-
-    //botones superiores
-
-    // selecciono input reemplazar
-
-    let inputReemplazar = document.getElementById('btn-reemplazar')
-    console.log(inputReemplazar)
-
-    //clase btn-agregar
-    let classBtnAgregar = document.getElementsByClassName('btn-agregar')
-    console.log(classBtnAgregar)
-
-    //selecciono inputs con clase btn-agregar
-
-    let inputAgregar = document.getElementsByClassName('btn-agregar')[0]
-    console.log(inputAgregar)
-
-    let inputAgregar5 = document.getElementsByClassName('btn-agregar')[1]
-    console.log(inputAgregar5)
-
-    let inputAgregar10 = document.getElementsByClassName('btn-agregar')[2]
-    console.log(inputAgregar10)
-
-    let inputAgregarN = document.getElementsByClassName('btn-agregar')[3]
-    console.log(inputAgregarN)
-
-    //botones inferiores
-
-    //selecciono input vaciar
-
-    let inputVaciar = document.querySelector('.btn-vaciar')
-    console.log(inputVaciar)
-
-    //selecciono input mayusculas
-
-    let inputMayusculas = document.querySelector('.btn-convertir-a-mayusculas')
-    console.log(inputMayusculas)
-
-    //selecciono button minusculas
-
-    let btnMinusculas = document.querySelector('button')
-    console.log(btnMinusculas)
+     /*---------------Consigna 4 ------------*/
 
     // cambio porpiedad disabled a false
 
@@ -66,24 +25,20 @@
         });
     });
 
-    /*----- Ejemplo Maxi ----- */
-
-    /* arrayColores = ['Rojo', 'Verde', 'Azul', 'Marrón', 'Violeta', 'Rosa', 'Amarillo']
-
-    arrayColores.forEach(function(color) {
-        console.log(color)
-    }) */
-
-
-    /*Consigna 5 */
+     /*---------------Consigna 5 ------------*/
 
     // selecciono div destino 
 
     let divDestino = document.querySelector('#destino')
     console.log(divDestino)
 
+    
     // función reemplazar
-
+    // selecciono input reemplazar
+    
+    let inputReemplazar = document.getElementById('btn-reemplazar')
+    console.log(inputReemplazar)
+    
     function btnReemplazar() {
         inputReemplazar.addEventListener ('click', () =>{
             divDestino.innerHTML = textareaOrigen.value
@@ -94,6 +49,11 @@
     btnReemplazar()
 
     // función agregar
+
+    //selecciono inputs con clase btn-agregar
+
+    let inputAgregar = document.getElementsByClassName('btn-agregar')[0]
+    console.log(inputAgregar)
 
     function btnAgregar() {
         inputAgregar.addEventListener ('click', () =>{
@@ -106,6 +66,9 @@
 
     // función agregar 5
 
+    let inputAgregar5 = document.getElementsByClassName('btn-agregar')[1]
+    console.log(inputAgregar5)
+
     function btnAgregar5() {
         inputAgregar5.addEventListener ('click', () =>{
             divDestino.innerHTML = textareaOrigen.value.repeat(5)
@@ -116,6 +79,10 @@
     btnAgregar5()
 
      // función agregar 10
+
+     let inputAgregar10 = document.getElementsByClassName('btn-agregar')[2]
+    console.log(inputAgregar10)
+
 
      function btnAgregar10() {
         inputAgregar10.addEventListener ('click', () =>{
@@ -128,6 +95,9 @@
 
      // función agregar N veces
 
+     let inputAgregarN = document.getElementsByClassName('btn-agregar')[3]
+    console.log(inputAgregarN)
+
      /* function btnAgregarN() {
         inputAgregarN.addEventListener ('click', () =>{
             divDestino.innerHTML = textareaOrigen.value.repeat()
@@ -136,13 +106,15 @@
     }
 
     btnAgregarN()
-
-    let agregarPrompt = prompt('Indica la cantidad de veces que desee agregar el contenido')
  */
 
-    /*Consigna 6 */
+    /*---------------Consigna 6 ------------*/
 
     // función vaciar
+    //selecciono input vaciar
+
+    let inputVaciar = document.querySelector('.btn-vaciar')
+    console.log(inputVaciar)
 
     function btnVaciar() {
         inputVaciar.addEventListener ('click', () =>{
@@ -154,6 +126,10 @@
     btnVaciar()
 
      // función Mayusculas
+     //selecciono input mayusculas
+
+    let inputMayusculas = document.querySelector('.btn-convertir-a-mayusculas')
+    console.log(inputMayusculas)
 
     function btnMayusculas() {
         inputMayusculas.addEventListener ('click', () =>{
@@ -165,7 +141,11 @@
     btnMayusculas()
 
     // función Minusculas
+    //selecciono button minusculas
 
+    let btnMinusculas = document.querySelector('button')
+    console.log(btnMinusculas)
+    
     function btnMin() {
         btnMinusculas.addEventListener ('click', () =>{
             divDestino.innerHTML = divDestino.innerHTML.toLowerCase()
@@ -175,28 +155,16 @@
 
     btnMin()
 
-    /*Consigna 7*/
+     /*---------------Consigna 7 ------------*/
 
-    let listas = document.getElementsByTagName('li')
-    console.log(listas)
-    
-  
+   let listas = document.getElementsByTagName('li')
+   console.log(listas)
 
+  /*  listas.forEach(function(li) {
+       console.log(color)
 
-    
-    
+   })  */
 
-    
- 
-
-   /*  let input = document.querySelectorAll('input').disabled = false
-    console.log(input) 
-    let button = document.querySelector('button').disabled = false
-
-   /*Consigna 5 */
-
-   /* let reemplazar = document.querySelector('#btn-reemplazar')
-   console.dir(reemplazar) */
 
     }
 ) 
